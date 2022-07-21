@@ -50,15 +50,56 @@
                 justify-content: space-between;
 
                 .headerTools{
-                    margin-top: 10%;
+                    margin-top: 5%;
                     display: flex;
                     justify-content: space-between;
-                    margin-left: 5%;
                     margin-right: 5%;
+                    
+                    .NameSiteSave{
+                        cursor: pointer;
+                        color: #fff;
+                        padding: 14px 15px;
+                        display: flex;
 
+                        span{
+                            margin-right: 10px;
+                        }
+                    }
+                    
+                    .SaveCardButton{
+                        cursor: pointer;
+                        background-color: #e60023;
+                        color: #fff;
+                        padding: 14px 15px;
+                        border-radius: 24px;
+                        min-width: 60px;
+                    }
+                    
+                    .SaveCardButton:hover{
+                        background-color: #ad081b;
+
+                    }
+                    
                 }
                 .footerTools{
                     margin-bottom: 10%;
+                    display: flex;
+                    justify-content: right;
+
+                    .BtnTool{
+                        height: 16px;
+                        width: 16px;
+                        padding: 8px;
+                        background-color: rgba(255, 255, 255, 0.8);
+                        border-radius: 50%;
+                        margin-right: 4%;
+                        cursor: pointer;
+                    }
+                    
+                    .BtnTool:hover{
+                        background-color: rgba(255, 255, 255, 0.9);
+
+                    }
 
                 }
             }
@@ -66,7 +107,47 @@
             .FooterCard{
                 width: 230px;
                 height: 50px;
+                display: flex;
+                align-items: center;
+
                 background-color: rgb(255, 255, 255);
+                
+                .contentCard{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    cursor: pointer;
+                    
+                    .BtnProfile{
+                        
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                        
+                    }
+                    
+                    .NameProfile{
+                        height: 30px;
+                        margin-left: 5px;
+
+                        a{
+                            text-decoration: none;
+                            color: inherit;
+                            span{
+                                font-weight: 400;
+
+                            }
+                        }
+                       
+                    }
+                }
+
+                .contentCard:hover{
+                    text-decoration: underline;
+                }
+                
             }
         }
     }

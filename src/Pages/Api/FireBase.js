@@ -1,6 +1,7 @@
  // Import the functions you need from the SDKs you need
- import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
- import {getStorage, ref, getDownloadURL, getMetadata, listAll}  from "https://www.gstatic.com/firebasejs/9.9.0/firebase-storage.js";
+ import { initializeApp, } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+ //import {getStorage, ref, getDownloadURL, getMetadata, listAll}  from "https://www.gstatic.com/firebasejs/9.9.0/firebase-storage.js";
+ import * as fbDatabase from "https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js";
  import * as fbstore from "https://www.gstatic.com/firebasejs/9.9.0/firebase-storage.js";
  // TODO: Add SDKs for Firebase products that you want to use
  // https://firebase.google.com/docs/web/setup#available-libraries
@@ -17,13 +18,18 @@
 
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
+
  const firebaseStorage = {
-    getStorage: getStorage(app),
-    ref,
-    getDownloadURL,
-    getMetadata,
-    listAll,
+    getStorage: fbstore.getStorage(app),
+    refStorage: fbstore.ref,
+    getDownloadURL: fbstore.getDownloadURL,
+    getMetadata: fbstore.getMetadata,
+    listAll: fbstore.listAll,
+
+    getDatabase: fbDatabase.getDatabase(app),
+    refDatabase: fbDatabase.ref,
 }
-//console.log(fbstore);
+console.log(fbDatabase);
+console.log(fbstore);
 
  export default firebaseStorage;

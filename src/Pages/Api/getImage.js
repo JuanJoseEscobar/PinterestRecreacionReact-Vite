@@ -3,13 +3,12 @@ import firebaseStorage from './FireBase';
 
 
 export const getImage = () => {
-    const {getDownloadURL,getStorage,ref,getMetadata,listAll} = firebaseStorage;
+    const {getDownloadURL,getStorage,refStorage,getMetadata,listAll} = firebaseStorage;
 
     const [userURL, setUserURL] = useState('');
 
-    getDownloadURL(ref(getStorage,'Users/Astro.png'))
+    getDownloadURL(refStorage(getStorage,'Users/Astro.png'))
     .then((e)=>{
-        console.log(e);
         setUserURL(e);
     })
     .catch((e)=>{

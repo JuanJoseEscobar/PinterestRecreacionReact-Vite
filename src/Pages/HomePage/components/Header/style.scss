@@ -15,13 +15,18 @@
         padding: 0;
         justify-content: center;
         align-items: center;
-    
+
+        a{
+            text-decoration: none;
+        }
+
         .Btn{
             display: flex;
             height: 48px;
             justify-content: center;
             align-items: center;
             background-color: #fff;
+            color: black;
             cursor: pointer;
             
             .ImgU{
@@ -34,9 +39,11 @@
             span{
                 font-weight: 600;
                 font-size: 16px;
+                color: inherit;
             }
             
         }
+    
         
         .Tool{
             width: 48px;
@@ -69,12 +76,12 @@
         }
         .select{
             background-color: black;
-            color: #fff;
+            color: #fff !important;
             
         }
 
         .SearchBar{
-            background-color:#e2e2e2;
+            background-color:#efefef;
             border-radius: 24px; 
             display: flex;
             height: 48px;
@@ -95,7 +102,12 @@
                 margin-left: 8px;
                 background-color:#0000;
                 font-size:16px;
+                font-weight: 400;
             }
+        }
+
+        .SearchBar:hover{
+            background-color:#e2e2e2;
         }
 
     }

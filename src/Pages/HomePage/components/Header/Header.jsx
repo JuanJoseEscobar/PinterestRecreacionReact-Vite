@@ -8,22 +8,30 @@ export const Header = () => {
   return (
     <div className='HeaderBar'>
       <div className= 'ContentHeader'>
-        <div className='Btn Tool'>
-          <svg className="pinterest" version="1.1" 
-              width="24" height="24" viewBox="0 0 24 24">
-              <path fill={Colors.pinterest}
-                d={svg.pinterest}>
-              </path> 
-          </svg>
-        </div>
 
-        <div className='Btn Page select'>
-          <span>Inicio</span>
-        </div>
+        <a href="/">
+          <div className='Btn Tool' href="/">
+            <svg className="pinterest" version="1.1" 
+                width="24" height="24" viewBox="0 0 24 24">
+                <path fill={Colors.pinterest}
+                  d={svg.pinterest}>
+                </path> 
+            </svg>
+          </div>
+        </a>
 
-        <div className='Btn Page '>
-          <span>Hoy</span>
-        </div>
+
+        <a href="/inicio">
+          <div className='Btn Page select'>
+            <span href="/hou">Inicio</span>
+          </div>
+        </a>
+
+        <a href="/Hoy">
+          <div className='Btn Page '>
+            <span>Hoy</span>
+          </div>
+        </a>
 
         <div className='Btn Page '>
           <span>Crear</span>
@@ -62,9 +70,11 @@ export const Header = () => {
           </svg>
         </div>
 
-        <div className='Btn Tool'>
-          <img className='ImgU' src={getImage()} alt="" />
-        </div>
+        <a href="/profile">
+          <div className='Btn Tool'>
+            <img className='ImgU' src={getImage()} alt="" />
+          </div>
+        </a>
 
         <div className='Btn mini'>
           <svg className="pinterest" version="1.1" 

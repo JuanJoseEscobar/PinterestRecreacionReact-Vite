@@ -7,7 +7,6 @@ export const Card = ({url}) => {
   const [hoverImg, setHoverImg] = useState('none');
 
   const setMaxHigh = ({target}) =>{
-    console.log(target.height)
     setHeight(target.height);
 
   }
@@ -37,11 +36,30 @@ export const Card = ({url}) => {
   return (
     <div className="Card" style={hoverWindow.card}>
         <div className="image" onMouseEnter ={activeHover} onMouseLeave={desactiveHover}>
+
             <img src={url} onLoad={setMaxHigh}  alt="" />
+
             <div className="Hover" style={hoverWindow.window} >
               <HoversTools/>
             </div>
-            <div className="FooterCard" ></div>
+
+            <div className="FooterCard" >
+              
+              <div className="contentCard">
+
+                <div className='BtnProfile'>
+                  <img className='ImgProfile' src="https://firebasestorage.googleapis.com/v0/b/reactpinterest-d9341.appspot.com/o/Users%2FAstro.png?alt=media&token=9adf5cd5-dd3d-4aa3-827b-d8c0e6b1dcee" alt="" />
+                </div>
+
+                <div className="NameProfile">
+                  <a href=""><span>spia</span></a>
+                </div>
+
+              </div>
+
+
+            </div>
+
         </div>
     </div>
   )
