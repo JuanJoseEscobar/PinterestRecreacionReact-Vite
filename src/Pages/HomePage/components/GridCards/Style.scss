@@ -1,0 +1,73 @@
+.gridContent{
+    .grid{
+        margin-top: 80px;
+        padding: 0;
+        width: 95vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 250px);
+        grid-auto-rows: minmax(20px, 0px);
+        justify-content: center;
+        
+
+        .Card{
+            
+            margin: 0;
+            padding: 10px 10px;
+            background-color: rgb(255, 255, 255);
+
+        }
+        .image{
+            height: auto;
+            margin: 0;
+            padding: 0;
+            display: grid;
+
+
+            img{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: auto;
+                border-radius: 16px;
+                z-index: 0;
+                
+                
+                
+            }
+
+            .Hover{
+                position: absolute;
+                border-radius: 16px;
+                width: 230px;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: block;
+                cursor: zoom-in;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .headerTools{
+                    margin-top: 10%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 5%;
+                    margin-right: 5%;
+
+                }
+                .footerTools{
+                    margin-bottom: 10%;
+
+                }
+            }
+
+            .FooterCard{
+                width: 230px;
+                height: 50px;
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
