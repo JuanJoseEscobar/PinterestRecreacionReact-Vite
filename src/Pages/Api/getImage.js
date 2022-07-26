@@ -3,7 +3,7 @@ import firebaseStorage from './FireBase';
 
 
 export const getImage = () => {
-    const {getDownloadURL,getStorage,refStorage,getMetadata,listAll} = firebaseStorage;
+    const {getDownloadURL,getStorage,refStorage} = firebaseStorage;
 
     const [userURL, setUserURL] = useState('');
 
