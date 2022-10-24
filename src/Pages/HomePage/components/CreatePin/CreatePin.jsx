@@ -1,6 +1,15 @@
+
 import "./Style.scss";
 
 export const CreatePin = () => {
+
+
+    const StyleToLoad = {
+        imageLoad: {
+           backgroundImage: `none`,
+        },
+    }
+
   return (
     <div className="CreateContent">
 
@@ -38,6 +47,43 @@ export const CreatePin = () => {
                     </div>
                 </div>
 
+
+            </div>
+
+            <div className="CardBoddy">
+
+                <div className="UpLoaderImageContent">
+
+                    <div className="UpLoaderCard">
+                        
+                        <div className="ImageContent">
+
+                            <div className="layoutInput">
+
+                                <div className="cardMiniInfo">
+
+                                </div>
+
+                                <div className="ImagLoad" aria-label="Imagen Cargada" role="img" style={StyleToLoad.imageLoad}>
+
+                                </div>
+
+                            </div>
+
+                            <input className="BoxInput" id="BoxInput" name="BoxInput" type="file" src=""  alt="" accept="image/bmp,image/gif,image/jpeg,image/png,image/tiff,image/webp"
+                            aria-hidden="false" tabindex="0"/>
+
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+                <div className="InfoImageContent">
+
+                </div>
 
             </div>
 

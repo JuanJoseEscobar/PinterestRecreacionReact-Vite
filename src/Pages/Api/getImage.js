@@ -15,16 +15,5 @@ export const getImage = () => {
         console.log('Error')
     });
     
-    // listAll(ref(getStorage,'Users'))
-    // .then(({items})=>{
-    //     items.forEach(({fullPath}) => {
-    //         //console.log(fullPath);
-    //     });
-        
-    // })
-    // .catch((e)=>{
-    //     console.log('Error')
-    // });
-
     return userURL;
 }

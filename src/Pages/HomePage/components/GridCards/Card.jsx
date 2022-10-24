@@ -8,7 +8,6 @@ export const Card = ({url}) => {
 
   const setMaxHigh = ({target}) =>{
     setHeight(target.height);
-
   }
 
   const hoverWindow = {
@@ -31,6 +30,7 @@ export const Card = ({url}) => {
     setHoverImg('none');
   }
 
+  
 
 
   return (
@@ -52,7 +52,7 @@ export const Card = ({url}) => {
                 </div>
 
                 <div className="NameProfile">
-                  <a href=""><span>spia</span></a>
+                  <a href=""><span>Astro</span></a>
                 </div>
 
               </div>
