@@ -1,10 +1,12 @@
 import { useState } from "react"
 import { HoversTools } from "./HoversTools";
+import { useFetchImage } from "./useFetchImage";
 
 
 export const Card = ({url}) => {
   const [height, setHeight] = useState(0);
   const [hoverImg, setHoverImg] = useState('none');
+  const {imaURL, isLoading} = useFetchImage(url);
 
   const setMaxHigh = ({target}) =>{
     setHeight(target.height);
@@ -37,13 +39,18 @@ export const Card = ({url}) => {
     <div className="Card" style={hoverWindow.card}>
         <div className="image" onMouseEnter ={activeHover} onMouseLeave={desactiveHover}>
 
-            <img src={url} onLoad={setMaxHigh}  alt="" />
+            <img src={imaURL} onLoad={setMaxHigh}  alt="" />
 
             <div className="Hover" style={hoverWindow.window} >
               <HoversTools/>
             </div>
 
-            <div className="FooterCard" >
+            {isLoading && (
+              <h2>Cargando...</h2>
+            )}
+
+            {!isLoading && (
+              <div className="FooterCard" >
               
               <div className="contentCard">
 
@@ -59,6 +66,9 @@ export const Card = ({url}) => {
 
 
             </div>
+            )}
+
+            
 
         </div>
     </div>
