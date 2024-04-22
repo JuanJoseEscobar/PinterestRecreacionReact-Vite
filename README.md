@@ -2,7 +2,7 @@
 
 React-Vite: Pinterest
 
-**link:** https://reactpinterest-d9341.web.app/
+**link:** https://jjezportafolio.web.app/
 
-**link-2:** https://reactpinterest-d9341.firebaseapp.com/
+**link-2:** https://jjezportafolio.firebaseapp.com/
 
